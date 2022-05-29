@@ -1,4 +1,3 @@
-<!--Git init -->
 <h1 ><strong>git init</strong></h1>
 <p>Permite iniciar nuestro proyecto en github</p>
 <br />
@@ -27,7 +26,7 @@
 <p>Permite visualizar el historial de los commits en nuestro proyecto </p>
 <br />
 <h1><strong>git log --onleline<strong></h1>
-<p>nos permite tener una vista mas simplificada que la de <strong>git log</strong></p>
+<p>nos permite tener una vista mas simplificada que la de <strong>git log</strong>, mostrandonos a demas el hash vinculado a cada commit</p>
 <br />
 <h1><strong>git log --stat<strong></h1>
 <p>Nos permite visualizar cuantos han sido los cambios, en este caso serial las insersiones o eliminaciones de lineas de codigos en cada uno de nuestros commit </p>
@@ -61,14 +60,57 @@ Para esto es necesari que estemos principlamnete en la rama donde combinaremos a
 <br />
 <br />
 <br />
-<h1><strong><strong></h1>
-<p></p>
+<h1><strong>git remote<strong></h1>
+<p>Al momento de crear un nuevo repositorio en github nos daran la url del repositorio en este caso para si se desea agregar un nuevo repositorio remoto se debera crear el repositorio en git, seguidamente se debera colocar el siguiete comando</p>
+<h2><strong>git remote add origin <strong>url dada por githun</strong><strong></h2>
+<p>Una ves echo esto nos asignara el respositorio como origin</p>
 <br />
-<h1><strong><strong></h1>
-<p></p>
+<h1><strong>git remote -v<strong></h1>
+<p>Nos permite visualizar mas detalle del repositorio a la cual se mostrara las opciones fetch y push</p>
 <br />
-<h1><strong><strong></h1>
-<p></p>
+<h1><strong>git push<strong></h1>
+<p>nos permitira cargar o enviar los datos a la rama principal</p>
+<br />
+<p>PARA insertar los datos en el respotirio esto nos solicitara lo siguiente: <br /> 
+git push <strong>NombreDeLaRamaAsubir</strong> main</p>
+<br />
+<h1><strong>git pull remotoDondeSeDescargaraLaINFO(por defecto sera origin) ramaADescargar(por defecto puede ser main)<strong></h1>
+<p>nos permite descargar el repositorio</p>
+<br />
+<h1><strong>git fetch</h1>
+<p>nos permite descargar el contenido del repositorio, la diferencia entre git pull y git fetch es git fetch va a descargar el contenido pero no le aplicara un merge, esto quiere decir que podremos acceder a estos cambios sin mezclarlo al proyecto principal</p>
+<br />
+<h1>git clone<strong><strong></h1>
+<p>nos permite clonar o descargar un proyecto que no necesariamente es de nuestra propiedad, esto se hace de la siguiente manera</p><br />
+<p>git clone (url del proyecto remoto)</p>
+<br />
+<h1><strong>git log --oneline --graph --all<strong></h1>
+<p>nos muestra todos los pull requests añadidos en el proyecto a lo largo del tiempo</p>
+<br />
+<h1><strong>git stash<strong></h1>
+<p>Nos permite guardar de forma temporal una porcion de nuestro codigo sin la necesidad de hacer un commit</p>
+<br />
+<h1><strong>git stash pop<strong></h1>
+<p>nos permite regresar los cambios aplicados anteriormente en main</p>
+<br />
+<h1><strong>git checkout (hash)<strong></h1>
+<p>nos permite navegar dentro de los commits para validar a fondo los cambios ejecutados a lo largo de dichos commits</p>
+<br />
+<h1><strong>git reverse<strong></h1>
+<p>nos permite deshacer o revertir un commit, esto tomara el ultimo commit y hara los cambios inversos a lo echo en dicho commit, en este caso lo que ara es revertirlo y agregar los trozos de codigo que fueron eliminados </p>
+<br />
+<h1><strong>git reset --hard<strong></h1>
+<p>Es otra forma de revertir un commit </p>
+<p>Ejemplo <br /> 
+git reset --hard (hash del commit al que se quiere revertir);
+</p>
+<p>No es recomendable a la hora de tener un repositorio central o cincronizados</p>
+<br />
+<h1><strong>git commit --amend<strong></h1>
+<p>Nos permite agregar una modificacion a nuestro ultimo commit echo en el proyecto, esto nos ayuda por si nos olviamos en modificar algo de ultimo momento</p>
+<br />
+<h1><strong>git rebase<strong></h1>
+<p>nos permite hacer un merche con la particularidad de tomar todos los commit que se tengan en una rama y nos la coloca en otra rama.</p>
 <br />
 <h1><strong><strong></h1>
 <p></p>
